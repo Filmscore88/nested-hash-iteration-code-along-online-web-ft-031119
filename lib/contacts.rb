@@ -17,7 +17,7 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts["Freddy Mercury"].collect do |k,v| 
     if k == :favorite_ice_cream_flavors 
-     contacts["Freddy Mercury"][k].drop (1)
+     v.shift
     end 
   end 
 end
